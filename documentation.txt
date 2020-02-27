@@ -1,0 +1,22 @@
+Processing will start by importing the supporting packages that we’ll need,
+
+so imported PIL library, and from PIL library Image and Image filter is imported on Lines 10.
+
+
+Lines 12-26 represents the function which is made for completeing the task of text detection, extraction and making background white.
+In line 12 a function named getTextOverlay is made where input is image which we want to process.
+In line 14 an empty list is made to store the output image
+In line 15, applying a for loop over three channel (R,G,B).
+In line 16, applying a thresold value to RED GREEN and BLUE channel to segment the text from the background.
+In line 17, and 19, image data is stored after the thresolding.
+In line 21, processed image is stored.
+In line 22, processed image is shown to analyze the result.
+Result analysis shows that there are some unwanted background still present.henec,
+Erosion operation is appied in line 23 to make the result more acurate.
+In line 26,  getTextOverlay function is returning our final output image.
+ 
+In line 29 to 35, getTextOverlay function is called and perform the operation.
+In line 35, Final output is saved after processing. 
+
+
+
